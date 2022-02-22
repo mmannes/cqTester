@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "request": "launch",
+            "name": "Launch Program",
+            "type":"node",
+            "program": "${workspaceFolder}/tests/cqTester/runTests.php",
+            "cwd": "${workspaceFolder}/tests",
+            "runtimeExecutable": "php",
+            "args": [
+                "${fileBasename}",
+                "https://dev.remote.address.com", // Remote URL that hosts the tests
+                "${workspaceFolderBasename}" // Remote Path to the project folder
+            ],
+            "outputCapture": "std"
+        }
+    ]
+}
