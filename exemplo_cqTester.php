@@ -21,7 +21,7 @@
     
     static function testExemploInvalido() {
         $obj = self::mockUpExemplo('Teste', '');
-        assert($obj->isValido() === false; 'O exemplo deveria ser invalido pois é necessária uma descrição válida');
+        assert($obj->isValido() === false, 'O exemplo deveria ser invalido pois é necessária uma descrição válida');
     }
     
   }
