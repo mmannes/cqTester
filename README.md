@@ -1,6 +1,8 @@
 # cqTester
 Convenções para executar testes remotos em PHP
 
+Justificativa: ambientes legados (PHP 5.6 e anteriores) não conseguem rodar bibliotecas de testes utitários. Também é inviável simular esses ambientes legados em ambientes locais de desenvolvimento pois normalmente incluem, por exemplo, algum banco de dados antigo, SO antigos, etc. Estas convenções são somente um facilitador para que mesmo nesses ambientes inóspitos seja possível ter código testável rapidamente com um único comando.
+
 Na raiz do projeto crie um diretório chamado `tests` e adicione seus arquivos de testes dentro. Os arquivos devem inicar com o nome `test` para que o executor saiba qual arquivo deve ser executado.
 
 Dentro do diretório `tests` clone este repositório com o comando:
