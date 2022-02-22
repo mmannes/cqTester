@@ -19,4 +19,4 @@ A classe `cqTest` pode ser extendida para criar uma classe de testes com algumas
 - Uma função `setup` para incluir tudo o que é necessário para o teste executar (autenticação, includes, requires, etc)
 
 ### Exemplo
-> Vide https://github.com/mmannes/cqTester/exemplo_cqTest.php
+> Vide https://github.com/mmannes/cqTester/blob/main/exemplo_cqTester.php
