@@ -52,14 +52,14 @@ class cqTest implements cqTestInterface {
                 static::$method();
             } catch(Exception $e) {
                 echo $e;
-                break;
+                //break;
             }
         }
         return true;
     }
 
     static function assertHandler($file, $line, $code, $description) {
-        throw new Exception(PHP_EOL . 'TESTE FALHOU: ' . $description . '; Arquivo: ' . $file . '(' . $line . '); Code: ' . $code . '. ' . PHP_EOL);
+        echo PHP_EOL . 'TESTE FALHOU: ' . $description . '; Arquivo: ' . $file . '(' . $line . '); Code: ' . $code . '. ' . PHP_EOL;
     }
 }
 ?>
