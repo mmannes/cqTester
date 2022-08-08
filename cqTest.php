@@ -31,9 +31,11 @@ class cqTest implements cqTestInterface {
         self::setErrorLevel();
         if(strlen($setup_output) > 0) {
             echo new Exception('SETUP DO TESTE FALHOU: ' . $setup_output);
+            ob_flush();
         }
         if($exception !== false) {
             echo 'SETUP DO TESTE FALHOU: ' . $exception;
+            ob_flush();
         }
         ob_end_clean();
         assert_options(ASSERT_ACTIVE, 1);
